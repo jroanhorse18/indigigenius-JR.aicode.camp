@@ -1,0 +1,24 @@
+#Loops and Turtle
+
+from turtle import Turtle, Screen
+
+wn = Screen()
+wn.bgcolor("indigo")
+wn.title("Repeating Around 360 Degrees")
+
+t = Turtle()
+t.speed(5)
+t.pensize(2)
+t.pencolor("light blue")
+
+for _ in range(5):  # 36 iterations for 10 degrees each (360 / 36 = 10)
+    for _ in range(3):
+        t.pendown()
+        t.forward(150)
+        t.right(120)
+        t.forward(150)
+    
+    # Rotate the turtle by 10 degrees for the next square
+    t.right(72)
+
+wn.exitonclick()

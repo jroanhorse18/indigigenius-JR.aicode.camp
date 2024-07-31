@@ -40,10 +40,5 @@ draw_square(75, -75, 50)
 
 draw_square(0, 0, 250)
 
-
-
-# YOUR CODE HERE
-
-
 # DON'T TOUCH THIS
 turtle.mainloop()

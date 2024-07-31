@@ -1,0 +1,22 @@
+import turtle
+
+def draw_equilateral_triangle(side_length):
+    for _ in range(3):
+        turtle.forward(side_length)
+        turtle.left(120)
+
+def draw_triangles(num_triangles, side_length):
+    for _ in range(num_triangles):
+        draw_equilateral_triangle(side_length)
+        turtle.left(45)
+
+# Setup
+screen = turtle.Screen()
+turtle.speed(1)  # Adjust speed if necessary
+turtle.penup()
+turtle.goto(-100, 0)  # Start drawing from left
+turtle.pendown()
+# Draw three triangles with rotations
+draw_triangles(3, 100)
+
+turtle.done()
